@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EMPLOYEES" directorySegmentName="seg_0" id="E620E5EC-CC2C-8793-7DB7-E9EC8C4E5FEB">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<schemaObject>6570BB7E-BA8B-57EC-09D8-16F38693A381</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B3B8ED76-B4B0-30B0-5210-65D849E1363D</segment>
+<tableSpace>7774EB98-F029-61D7-E0B3-8EEF3F021467</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EMPLOYEE_ID" id="294B2550-770F-2D9F-00A6-E1A8AEABABC2">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTMENT_ID" id="32583553-BA1A-1D8A-C5B0-9C27A2933DA0">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FIRST_NAME" id="3841F4CD-4E22-4F92-5E3C-7987624A1BDD">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MANAGER_ID" id="4A6F090D-E747-C352-6204-3740EEA004FE">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMMISSION_PCT" id="4EB5337B-FA75-1FCC-7F9E-F36CE410A5CF">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALARY" id="64CCAD97-7B82-CD7E-46F2-16B2C9D6C9FF">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HIRE_DATE" id="75125D60-0B1C-B688-F06A-6C5C6703A208">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB_ID" id="95D61129-6640-CA42-E4CE-C83B3A189E1A">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONE_NUMBER" id="96529662-05DD-C05F-8A53-962FFE72786F">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_NAME" id="9EC58F58-C3F4-BB23-E695-9029615C6FE2">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="C86E6DD4-655C-D4F4-CA9A-9E59DAA64050">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_EMP_ID_PK" id="523B074C-1F38-8DB9-53CF-C30B1B96BBFC">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<schemaObject>6570BB7E-BA8B-57EC-09D8-16F38693A381</schemaObject>
+<segment>F10DFFEA-1C52-5C5B-1FC3-CACDB2B1FA18</segment>
+<tableSpace>7774EB98-F029-61D7-E0B3-8EEF3F021467</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_NAME_IX" id="58612F5C-6155-03AE-4B14-28EAE6D111E2">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<schemaObject>6570BB7E-BA8B-57EC-09D8-16F38693A381</schemaObject>
+<segment>F10DFFEA-1C52-5C5B-1FC3-CACDB2B1FA18</segment>
+<tableSpace>7774EB98-F029-61D7-E0B3-8EEF3F021467</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_MANAGER_IX" id="8D2CC22A-2A72-E251-9DDF-465FA4AC03C0">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<schemaObject>6570BB7E-BA8B-57EC-09D8-16F38693A381</schemaObject>
+<segment>F10DFFEA-1C52-5C5B-1FC3-CACDB2B1FA18</segment>
+<tableSpace>7774EB98-F029-61D7-E0B3-8EEF3F021467</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_EMAIL_UK" id="907D8796-BAB2-D071-B618-C393DBBBE394">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<schemaObject>6570BB7E-BA8B-57EC-09D8-16F38693A381</schemaObject>
+<segment>F10DFFEA-1C52-5C5B-1FC3-CACDB2B1FA18</segment>
+<tableSpace>7774EB98-F029-61D7-E0B3-8EEF3F021467</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_DEPARTMENT_IX" id="A467BD0D-3C77-7710-6F29-47097301DFB8">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<schemaObject>6570BB7E-BA8B-57EC-09D8-16F38693A381</schemaObject>
+<segment>F10DFFEA-1C52-5C5B-1FC3-CACDB2B1FA18</segment>
+<tableSpace>7774EB98-F029-61D7-E0B3-8EEF3F021467</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_JOB_IX" id="EDACBF1E-C176-0C76-0EAE-96E0FC3FBEB1">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<schemaObject>6570BB7E-BA8B-57EC-09D8-16F38693A381</schemaObject>
+<segment>F10DFFEA-1C52-5C5B-1FC3-CACDB2B1FA18</segment>
+<tableSpace>7774EB98-F029-61D7-E0B3-8EEF3F021467</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMP_MANAGER_FK" id="21B8A118-DD95-FE3D-6E69-24A95B509D9A">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMP_JOB_FK" id="A9298E89-86E3-40EF-2CEC-ED13FF196762">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMP_DEPT_FK" id="EAF8528F-2C38-94FE-E0D8-DFA2335B42C6">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EMP_EMP_ID_PK" id="AE1E23E3-ABE8-7EDA-9A35-DBAEC51140C0">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<segment>F10DFFEA-1C52-5C5B-1FC3-CACDB2B1FA18</segment>
+<tableSpace>7774EB98-F029-61D7-E0B3-8EEF3F021467</tableSpace>
+<existingIndex>523B074C-1F38-8DB9-53CF-C30B1B96BBFC</existingIndex>
+<indexSegment>F10DFFEA-1C52-5C5B-1FC3-CACDB2B1FA18</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="EMP_EMAIL_UK" id="3614E8AB-3207-8BC4-5FB6-BF5B4D55CE7B">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:25:56 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<segment>F10DFFEA-1C52-5C5B-1FC3-CACDB2B1FA18</segment>
+<tableSpace>7774EB98-F029-61D7-E0B3-8EEF3F021467</tableSpace>
+<existingIndex>907D8796-BAB2-D071-B618-C393DBBBE394</existingIndex>
+<indexSegment>F10DFFEA-1C52-5C5B-1FC3-CACDB2B1FA18</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

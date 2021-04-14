@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="COUNTRIES" directorySegmentName="seg_0" id="D2A48A26-11BD-18B1-6179-ACD22E27F382">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<schemaObject>AE01C493-3EDF-6F6C-2FCD-FBE5DAAECF4C</schemaObject>
+<iotPctThreshold>50</iotPctThreshold>
+<logging>YES</logging>
+<organization>INDEX</organization>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2C6E42F0-287B-1EF9-7119-8BCFE5CDEECE</segment>
+<tableSpace>27E5526D-3D83-B3E6-8323-FDC3C821570B</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COUNTRY_NAME" id="183ACE96-9DF7-C7E1-EE5A-D7FB2471FB72">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_ID" id="4BF9C277-880E-15B6-5A08-3A6B8E6AAED5">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGION_ID" id="B0808410-56AC-0FAC-4DD3-E89ED45AC5F0">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="COUNTR_REG_FK" id="BFB0605A-4218-0F33-86AB-30FEC212E7D4">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="COUNTRY_C_ID_PK" id="57BE5E10-4E6D-1FB9-82B5-929191B1C77C">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<schemaObject>AE01C493-3EDF-6F6C-2FCD-FBE5DAAECF4C</schemaObject>
+<segment>2C6E42F0-287B-1EF9-7119-8BCFE5CDEECE</segment>
+<tableSpace>27E5526D-3D83-B3E6-8323-FDC3C821570B</tableSpace>
+<indexSegment>2C6E42F0-287B-1EF9-7119-8BCFE5CDEECE</indexSegment>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

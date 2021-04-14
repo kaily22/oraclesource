@@ -1,0 +1,370 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4565EABD-A0CA-4B87-3E2D-0155CBC1AED2" schemaObject="AE01C493-3EDF-6F6C-2FCD-FBE5DAAECF4C" name="EMPLOYEES">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMPLOYEES</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[employees table. Contains 107 rows. References with departments,
+jobs, job_history tables. Contains a self reference.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>AD46C665-34AC-D168-90A2-CCA1F50F754D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="7FB855EC-45A7-5091-0DDD-FA31045229AF">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key of employees table.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>8E8E11D9-AEDD-3991-D120-319000F39F1E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="7B30DF60-52FD-D90F-68D5-76B41C0F8C98">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>FIRST_NAME</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[First name of the employee. A not null column.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>A5A96F23-8E31-A059-E0BB-F56A473FED8C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="83243B2C-3DA9-A5FB-B31D-9875DC67641D">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>LAST_NAME</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Last name of the employee. A not null column.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>8975A316-EAF1-70B6-7401-A772F3B6D23A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP_LAST_NAME_NN</notNullConstraintName>
+</Column>
+<Column name="EMAIL" id="BE6E61DB-CCCC-8282-9256-8790D832708E">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Email id of the employee]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>AB42AB9C-1FBC-018E-4559-A171619AB2A0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP_EMAIL_NN</notNullConstraintName>
+</Column>
+<Column name="PHONE_NUMBER" id="F529472E-A03E-749F-5789-1561646E52E8">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>PHONE_NUMBER</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Phone number of the employee; includes country code and area code]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>9186EEDF-D902-7502-47B3-768C8AC98E13</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HIRE_DATE" id="1F8FA721-50DD-318F-61C8-D8144016FE22">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>HIRE_DATE</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date when the employee started on this job. A not null column.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>2D09BD4A-B599-D47E-5190-38CBB4DFC815</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP_HIRE_DATE_NN</notNullConstraintName>
+</Column>
+<Column name="JOB_ID" id="E936C6A7-7235-88B8-8938-2933A3E82FF0">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>JOB_ID</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Current job of the employee; foreign key to job_id column of the
+jobs table. A not null column.]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>787B1BA5-4D32-D3C6-A098-CC2FAFB90A09</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP_JOB_NN</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="398DCC0A-6BE0-5400-4F5D-A4376F4618A5" referredColumn="926A49C7-ECF4-6692-2FB0-090E502F3D8F"/>
+</associations>
+</Column>
+<Column name="SALARY" id="DF94A9EC-395B-8B22-560E-8F08A42F877A">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>SALARY</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Monthly salary of the employee. Must be greater
+than zero (enforced by constraint emp_salary_min)]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>E8865A33-497E-544B-1CF1-55DE9D964A3D</importedID>
+<constraintName>EMP_SALARY_MIN</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="salary &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="salary &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMISSION_PCT" id="9FE14402-FFD2-4237-CCA7-B055710B43B1">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>COMMISSION_PCT</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Commission percentage of the employee; Only employees in sales
+department elgible for commission percentage]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>9FEB74AC-7AF9-4953-9558-DF8B7FADC607</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_ID" id="C4438563-FC76-E33F-0C66-187F62E6668B">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>MANAGER_ID</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manager id of the employee; has same domain as manager_id in
+departments table. Foreign key to employee_id column of employees table.
+(useful for reflexive joins and CONNECT BY query)]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>3216842F-ECC6-6B5B-D9CC-AA6595CC6767</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C3A781F-A7BB-0900-B0B2-807294BDF210" referredColumn="7FB855EC-45A7-5091-0DDD-FA31045229AF"/>
+</associations>
+</Column>
+<Column name="DEPARTMENT_ID" id="C4C061BA-F7AA-BF8E-52FE-2BB55B9194D4">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Department id where employee works; foreign key to department_id
+column of the departments table]]></commentInRDBMS>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>A6424C2C-85F8-D059-E76C-7A8B4D245F3E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C2DC85A-69A7-59BD-9B8E-275FE1192AA4" referredColumn="B1D91533-C840-56A1-ADE6-0A61FEA97667"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A59FEF80-8CE7-13BC-EC6C-40D91C5908AD" name="EMP_EMP_ID_PK">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_EMP_ID_PK</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>8566742D-748B-8BD5-A1AD-9ED4185163E5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FB855EC-45A7-5091-0DDD-FA31045229AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19FDF0CA-D99B-20BE-1917-29F04F7905B4" name="EMP_EMAIL_UK">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_EMAIL_UK</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>27A238EF-2F5C-11ED-0008-EB9DFA2BDC64</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE6E61DB-CCCC-8282-9256-8790D832708E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D10160A-85F3-5420-1404-D0951C239AE0" schemaObject="AE01C493-3EDF-6F6C-2FCD-FBE5DAAECF4C" name="EMP_DEPARTMENT_IX">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_DEPARTMENT_IX</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>BBFE8EAB-32A8-B967-94C4-849D21A3EBE7</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4C061BA-F7AA-BF8E-52FE-2BB55B9194D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54D1845D-238E-135A-B297-03A5A1D92A19" schemaObject="AE01C493-3EDF-6F6C-2FCD-FBE5DAAECF4C" name="EMP_EMAIL_UK">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_EMAIL_UK</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>24ECDDBE-B91F-3B73-CBB7-22584A237F06</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE6E61DB-CCCC-8282-9256-8790D832708E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65F73B6F-E177-EE0A-7F8C-6130D4F3EED3" schemaObject="AE01C493-3EDF-6F6C-2FCD-FBE5DAAECF4C" name="EMP_EMP_ID_PK">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_EMP_ID_PK</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>B5AA9918-8F79-E47F-9F51-829174032EAE</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FB855EC-45A7-5091-0DDD-FA31045229AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F438C06-FEFB-8810-34C6-DF787752E498" schemaObject="AE01C493-3EDF-6F6C-2FCD-FBE5DAAECF4C" name="EMP_JOB_IX">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_JOB_IX</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>A1D07731-92C2-5F99-60A9-BB5444729A04</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E936C6A7-7235-88B8-8938-2933A3E82FF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90A0B7EF-EE42-1E85-AE98-3996C554A1AA" schemaObject="AE01C493-3EDF-6F6C-2FCD-FBE5DAAECF4C" name="EMP_MANAGER_IX">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_MANAGER_IX</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>62A059BF-3B47-1253-AE49-1B8806EBC09F</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4438563-FC76-E33F-0C66-187F62E6668B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8552EEA-C55A-7142-D3F6-36D7FB94830C" schemaObject="AE01C493-3EDF-6F6C-2FCD-FBE5DAAECF4C" name="EMP_NAME_IX">
+<sourceConnName>hr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_NAME_IX</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<importedID>A98DDF2A-4F96-4745-74D2-1F3D06E4D64C</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83243B2C-3DA9-A5FB-B31D-9875DC67641D"/>
+<colUsage columnID="7B30DF60-52FD-D90F-68D5-76B41C0F8C98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A93A765-4C3E-97A9-3B13-384C4681B901" name="EMP_DEPT_FK">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4C061BA-F7AA-BF8E-52FE-2BB55B9194D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC0ED86B-AEA4-44E9-75B0-1C3F903C43FC" name="EMP_JOB_FK">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E936C6A7-7235-88B8-8938-2933A3E82FF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43D632E7-54C2-9C53-9095-572BDB1A0DF9" name="EMP_MANAGER_FK">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:18:21 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4438563-FC76-E33F-0C66-187F62E6668B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

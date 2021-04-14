@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational_1" id="875F7BD8-75DB-E3DE-22A2-C4A17F56ED14">
+<createdBy>이승현</createdBy>
+<modifiedBy>이승현</modifiedBy>
+<createdTime>2021-04-13 08:07:19 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2A3FEA05-E444-B945-FE17-DB9C2CC7630E" otype="Table" vid="D3A999F6-5303-6037-E541-66BE65F1D988">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="32" y="19" width="218" height="210"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="404E36F3-6578-AA45-C2ED-0E27742C8741" otype="Table" vid="926211E8-CB68-D66E-2442-FA46AC902718">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="485" y="74" width="139" height="72"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="86A27DF7-5D36-D56B-1725-EBBE3D536127" otype="Table" vid="140DB3AC-3E91-EBAB-F83B-1685AAB29CA0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="260" y="72" width="203" height="87"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="BE643EA6-C688-43FD-7BC2-3937CC118556" otype="Table" vid="F29AB3DD-D28F-9B37-20C2-8E8D6DB9E716">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="43" y="306" width="209" height="114"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F10CEF28-6CC9-2AF5-15DC-3C4B46759FEC" otype="FKIndexAssociation" vid_source="F29AB3DD-D28F-9B37-20C2-8E8D6DB9E716" vid_target="D3A999F6-5303-6037-E541-66BE65F1D988">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="146" y="306"/>
+<point x="146" y="229"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

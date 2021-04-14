@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="hr" id="75EF5176-B342-16F4-C17B-E3690E24B54E" version="3.5">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:05:54 UTC</createdTime>
+<ownerDesignName>hr</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>75EF5176-B342-16F4-C17B-E3690E24B54E</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="AFFD8ED2-3BE6-DB10-B66E-A449F4BA8D6F">
+<designStoragePath>C:\oraclesource</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

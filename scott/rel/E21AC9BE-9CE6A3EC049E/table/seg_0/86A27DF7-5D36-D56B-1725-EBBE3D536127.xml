@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="86A27DF7-5D36-D56B-1725-EBBE3D536127" schemaObject="9869739B-D7FC-6152-13AC-557DA634F6B7" name="BONUS">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>BONUS</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:07:19 UTC</createdTime>
+<ownerDesignName>scott</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ENAME" id="F52EB2DF-F959-C91B-A073-A6860D1D8850">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>BONUS</sourceObjSchema>
+<sourceObjName>ENAME</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:07:19 UTC</createdTime>
+<ownerDesignName>scott</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB" id="F1F481A7-8725-7385-685F-BADE595E0757">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>BONUS</sourceObjSchema>
+<sourceObjName>JOB</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:07:19 UTC</createdTime>
+<ownerDesignName>scott</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAL" id="F598DDA6-0B70-C058-491E-A5FADFC487E5">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>BONUS</sourceObjSchema>
+<sourceObjName>SAL</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:07:19 UTC</createdTime>
+<ownerDesignName>scott</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMM" id="1C80D1D1-E258-3676-6D77-B11049614603">
+<sourceConnName>scott</sourceConnName>
+<sourceObjSchema>BONUS</sourceObjSchema>
+<sourceObjName>COMM</sourceObjName>
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:07:19 UTC</createdTime>
+<ownerDesignName>scott</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

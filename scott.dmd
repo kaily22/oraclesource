@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="scott" id="75EF5176-B342-16F4-C17B-E3690E24B54E" version="3.5">
+<createdBy>이승현</createdBy>
+<createdTime>2021-04-13 08:05:54 UTC</createdTime>
+<ownerDesignName>scott</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>75EF5176-B342-16F4-C17B-E3690E24B54E</designId>
+</OSDM_Design>
