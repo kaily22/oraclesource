@@ -88,3 +88,59 @@ WHERE DEPARTMENT_ID IN(60,70,80,90);
 SELECT EMPLOYEE_ID, (FIRST_NAME || ' ' || LAST_NAME), DEPARTMENT_ID, JOB_ID
 FROM EMPLOYEES
 WHERE JOB_ID IN('AD_PRES', 'PU_CLERK');
+
+
+SELECT LAST_NAME, SALARY, CASE WHEN  SALARY BETWEEN 0 AND 1999 THEN SALARY*0
+                        WHEN SALARY BETWEEN 0 AND 1999 THEN 0
+                        WHEN SALARY BETWEEN 2000 AND 3999 THEN 0.09
+                        WHEN SALARY BETWEEN 4000 AND 5999 THEN 0.2
+                        WHEN SALARY BETWEEN 6000 AND 7999 THEN 0.3
+                        WHEN SALARY BETWEEN 8000 AND 9999 THEN 0.4
+                        WHEN SALARY BETWEEN 10000 AND 11999 THEN 0.42
+                        WHEN SALARY BETWEEN 12000 AND 13999 THEN 0.44
+                        ELSE 0.45
+                        END AS TAX_RATE
+FROM EMPLOYEES
+WHERE DEPARTMENT_ID = 80;
+
+SELECT LAST_NAME, SALARY, DECODE(TRUNC(SALARY/2000,0),
+                                 0, 0.00,
+                                 1, 0.09,
+                                 2, 0.20,
+                                 3, 0.30,
+                                 4, 0.40,
+                                 5, 0.42,
+                                 6, 0.44,
+                                 0.45) AS TAX_RATE FROM EMPLOYEES 
+                                 WHERE DEPARTMENT_ID = 80;
+                                
+--회사 내의 최대 연봉 및 최소 연봉의 차이 조회
+
+SELECT  MAX(SALARY)-MIN(SALARY) AS SAL_GAP
+FROM EMPLOYEES;
+
+--매니저로 근무하는 사원들의 총 수를 조회
+SELECT COUNT(DISTINCT MANAGER_ID) AS 매니저 FROM EMPLOYEES;
+SELECT * FROM EMPLOYEES;
+--부서별 직원의 수를 구하여, 부서번호의 오름차순으로 출력
+SELECT DEPARTMENT_ID, COUNT(EMPLOYEE_ID) 
+FROM EMPLOYEES
+GROUP BY DEPARTMENT_ID
+ORDER BY DEPARTMENT_ID;
+
+--부서별 급여의 평균 연봉을 출력하기(부서번호, 평균 연봉이 나오도록 하고 부서번호 별 오름차순 조회)
+SELECT DEPARTMENT_ID, ROUND(AVG(SALARY))
+FROM EMPLOYEES
+GROUP BY DEPARTMENT_ID
+ORDER BY DEPARTMENT_ID;
+
+--동일한 직업을 가진 사원들의 수를 조회
+SELECT JOB_ID, COUNT(EMPLOYEE_ID) FROM EMPLOYEES GROUP BY JOB_ID;
+
+--문)
+SELECT MIN(SALARY),MANAGER_ID
+FROM EMPLOYEES
+WHERE MANAGER_ID IS NOT NULL
+GROUP BY MANAGER_ID
+HAVING MIN(SALARY) >=  6000
+ORDER BY MIN(SALARY) DESC;
